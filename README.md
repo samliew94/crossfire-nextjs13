@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CROSSFIRE
 
-## Getting Started
+Crossfire is a social-deduction, hidden-role game for 5 to 10 players. In each of the two
+different game types (Crossfire Mode and Sniper Mode), some players will try to shoot
+the VIP, some will try to protect the VIP, and others have their own agendas for victory.
 
-First, run the development server:
+Game Design by Emerson Matsuuchi. Published by [Plaid Hat Games](https://www.plaidhatgames.com/board-games/crossfire/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Installation with Docker
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Download this project.
+2. CMD/Powershell into the downloaded folder.
+3. run `docker build -t crossfire` (one-time only).
+4. run `docker run -p80:3000 --rm -e NEXTAUTH_URL=http://192.168.1.103 crossfire`
+   (replace '192.168.1.103' with your ipv4 address found at `ipconfig`).  
+    **IF YOU GIVE THE WRONG IPV4 ADDRESS, SIGN IN WILL FAIL.**
+5. Have all players navigate to your ipv4 address in their preferred browser e.g `http://192.168.1.103`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Roles
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Note that only the basic roles are available namely:
 
-## Learn More
+1. VIP
+2. AGENT
+3. ASSASSIN
+4. DECOY
+5. RED DECOY
+6. BLUE DECOY
+7. BOMBER (replaced BYSTANDER cause it's kinda meh)
 
-To learn more about Next.js, take a look at the following resources:
+## Screenshots:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![ScreenShot](/screenshots/1.png)
+![ScreenShot](/screenshots/2.png)
+![ScreenShot](/screenshots/3.png)
+![ScreenShot](/screenshots/4.png)
+![ScreenShot](/screenshots/5.png)
+![ScreenShot](/screenshots/6.png)
+![ScreenShot](/screenshots/7.png)
+![ScreenShot](/screenshots/8.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact Me
 
-## Deploy on Vercel
+For business inquiries or just general feedback, kindly email me at mlmsamliew@gmail.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Buy me a Cup of Coffee
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you like my work, consider buying me a cup of coffee by clicking [here](https://www.buymeacoffee.com/samliew94)
